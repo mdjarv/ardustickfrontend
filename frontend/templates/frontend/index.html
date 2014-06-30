@@ -73,6 +73,20 @@
 
     <hr>
 
+    <div class="container-fluid">
+        {% for device in devices %}
+        <div class="row">
+            <div class="span6">{{ device.name }}</div>
+            <div class="span3">
+                <div class="btn-group">
+                    <button class="btn btn-success">On</button>
+                    <button class="btn">Off</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
     <table class="table table-striped table-bordered">
         <thead>
         <tr>
