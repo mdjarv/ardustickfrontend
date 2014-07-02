@@ -4,8 +4,8 @@ import rabbitpy
 
 QUEUE = 'ardustick'
 
-#ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=3)
-ser = serial.Serial('COM2', 9600, timeout=3)
+ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=3)
+#ser = serial.Serial('COM2', 9600, timeout=3)
 init = ser.readline().strip(' \t\n\r')
 
 if init != "READY":
